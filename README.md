@@ -1,30 +1,35 @@
-# React + TypeScript + Vite
+# NeLtech Front-End
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a front-end web application built using React + TS + Vite.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 1. Install Dependencies
 
-## Expanding the ESLint configuration
+Ensure you have Node.js installed. If not, you can download them from [nodejs.org](https://nodejs.org/). Then, install the Node.js dependencies:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```sh
+npm install
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+### 2. Configure Environment Variables
+
+Copy the `.env.example` file to a new file named `.env`:
+
+```sh
+cp .env.example .env
+```
+
+Open the `.env` file and fill in the necessary values for your environment (e.g., API url).
+
+### 3. Run the React Application
+
+Start the React development server:
+
+```sh
+npm run dev
+```
+
+By default, the React app will be available at `http://localhost:5173`.
+
+---
